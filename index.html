@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <h1>Expense Tracker</h1>
+
+    <!-- Balance -->
+    <div class="balance">
+      <h2>Balance</h2>
+      <p id="balance">৳0</p>
+    </div>
+
+    <!-- Totals -->
+    <div class="totals">
+      <div class="income">
+        <h3>Income</h3>
+        <p id="income-total">৳0</p>
+      </div>
+      <div class="expense">
+        <h3>Expense</h3>
+        <p id="expense-total">৳0</p>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form id="transaction-form">
+      <input type="text" id="title-input" placeholder="Title (e.g. Lunch)" />
+      <input type="number" id="amount-input" placeholder="Amount" />
+      <select id="type-input">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit" id="add-btn">Add Transaction</button>
+    </form>
+
+    <!-- Error -->
+    <p id="error-message"></p>
+
+    <!-- Transaction History -->
+    <div class="history-container">
+      <h2>Transaction History</h2>
+      <ul id="transaction-list"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
